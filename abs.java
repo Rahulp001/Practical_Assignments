@@ -27,3 +27,34 @@ public abstract class abs {
 	}
 
 }
+---------------------------------------------------------------------------------
+	public class reverse extends abs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		reverse obj = new reverse();
+		obj.palindrome();
+		obj.rverse();
+  
+	}
+
+	@Override
+	void rverse() {
+		// TODO Auto-generated method stub
+		int num,temp = 0,r=0,a;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the number :");
+		num=sc.nextInt();
+		a=num;
+		while(num>0) 
+		{
+			r=num%10;
+			temp=(temp*10)+r;
+			num=num/10;
+		}
+		System.out.println("reverse is "+temp);
+		
+	}
+	
+
+}
